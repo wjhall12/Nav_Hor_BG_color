@@ -16,7 +16,8 @@ body {
 }
 
 nav {
-
+  position: sticky;
+  top: 0;
  }
 
 nav ul {
