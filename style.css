@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: aquablue;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 1000px;
+  max-width: 100%
+}
+
+nav {
+
+ }
+
+nav ul {
+  list-style-type: none;
+  /* The container becomes flexible by setting the display property to flex: */
+  display: flex;
+  /* The flex-wrap property specifies whether the flex items should wrap or not. Which changes the ul from vertical to horizontal */
+  flex-wrap: wrap;
+  padding: .5rem 0;
+}
+
+nav li {
+  /* The flex property sets how a flex item will grow or shrink to fit the space available in its container. */
+  flex: 1 auto;
+  /* The item is sized according to its width and height properties, but grows to absorb any extra free space in the container, and shrinks to its minimum size to fit the container. */
+}
+
+nav li a {
+  text-decoration: none;
+  /* text deocoration none removes the underline */
+  background-color: #2d99a4;
+  display: block;
+  /* display block allows you to display the color in this case throughout the nav as opposed to just having the color show in the background of each item */
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  /* This gives the background-color more spaces. Makes it wider  */
+}
+
+nav a.active {
+  background-color: white;
+  color: #2d99a4;
+  font-weight: bold;
+}
+
+
+nav a.highlight {
+  background-color: #026e78;
+  color: #fff;
+}
